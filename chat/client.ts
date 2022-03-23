@@ -3,7 +3,7 @@ import dgram = require("dgram");
 import fs = require("fs");
 import readline = require("readline");
 import {fromEvent, partition} from  "rxjs";
-import {scan, delay, filter, map, catchError} from "rxjs/operators";
+import {scan, delay, filter, map} from "rxjs/operators";
 
 function reconnect(socket: net.Socket, triesLeft: number){
   if(triesLeft === 0) socket.destroy();

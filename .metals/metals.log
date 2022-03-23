@@ -1,0 +1,105 @@
+2022.03.19 17:59:40 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/km/dev/sr-agh/.metals/lsp.trace.json or /home/km/.cache/metals/lsp.trace.json
+2022.03.19 17:59:41 INFO  logging to file /home/km/dev/sr-agh/.metals/metals.log
+2022.03.19 17:59:41 INFO  Started: Metals version 0.11.2 in workspace '/home/km/dev/sr-agh' for client Visual Studio Code 1.65.2.
+2022.03.19 17:59:41 INFO  Parse release: 17.0.1
+2022.03.19 17:59:43 INFO  time: initialize in 2.41s
+2022.03.19 17:59:43 WARN  Build server is not auto-connectable.
+2022.03.19 17:59:43 WARN  no build tool detected in workspace '/home/km/dev/sr-agh'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.03.19 17:59:46 WARN  no build target for: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/Voivodeship.scala
+2022.03.19 17:59:52 INFO  no build target found for /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/Voivodeship.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.03.19 17:59:53 WARN  no build target for: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/Country.scala
+2022.03.19 17:59:54 INFO  time: code lens generation in 7.79s
+2022.03.19 18:12:28 WARN  no build target for: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala
+2022.03.19 18:16:42 ERROR text document: file:///home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala
+java.nio.file.NoSuchFileException: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:90)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:90)
+	at java.util.HashMap.compute(HashMap.java:1316)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2770)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:89)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:63)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1628)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1626)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2022.03.19 22:27:46 WARN  no build target for: /home/km/dev/sr-agh/rest/build.sbt
+2022.03.19 22:49:48 WARN  no build target for: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala
+2022.03.20 02:49:27 INFO  shutting down Metals
+2022.03.21 14:20:07 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/km/dev/sr-agh/.metals/lsp.trace.json or /home/km/.cache/metals/lsp.trace.json
+2022.03.21 14:20:08 INFO  logging to file /home/km/dev/sr-agh/.metals/metals.log
+2022.03.21 14:20:08 INFO  Started: Metals version 0.11.2 in workspace '/home/km/dev/sr-agh' for client Visual Studio Code 1.65.2.
+2022.03.21 14:20:08 INFO  Parse release: 17.0.1
+2022.03.21 14:20:11 INFO  time: initialize in 2.93s
+2022.03.21 14:20:12 WARN  Build server is not auto-connectable.
+2022.03.21 14:20:12 WARN  no build tool detected in workspace '/home/km/dev/sr-agh'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Mar 21, 2022 2:20:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala",
+      "languageId": "scala",
+      "version": 1,
+      "text": "package km.sr.rest.views\n\nimport km.sr.rest.Encoding.voivodeshipMapping\nimport scalatags.Text\nimport scalatags.Text.all._\n\nobject RangeForm {\n  val formFrag: Text.TypedTag[String] \u003d div(\n    form(name:\u003d\"rangeForm\", id:\u003d\"rangeForm\", method:\u003d\"post\")(\n      select(name:\u003d\"yearSelect\", id:\u003d\"yearSelect\", required)(\n        option(disabled, selected)(\"Year\"),\n        for (year \u003c- 2020 to 2001 by -1) yield\n          option(value:\u003dyear)(year)\n      ),\n      select(name:\u003d\"regionSelect\", id:\u003d\"regionSelect\")(\n        option(value:\u003d\"\")(\"Poland\"),\n        for ((abbr, name) \u003c- voivodeshipMapping.toSeq) yield\n          option(value:\u003dabbr)(name)\n      )\n    ),\n    script(src:\u003d\"static/scripts/form.js\")\n  )\n}\n"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/km/dev/sr-agh/rest/src/main/scala/km/sr/rest/views/RangeForm.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:1041)
+	... 16 more
+
+2022.03.21 14:20:31 INFO  shutting down Metals

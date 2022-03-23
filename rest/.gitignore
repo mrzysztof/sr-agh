@@ -1,0 +1,6 @@
+*.class
+.idea
+.bsp
+target/
+node_modules
+*.js

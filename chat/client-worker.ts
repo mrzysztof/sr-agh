@@ -1,5 +1,5 @@
 import net = require("net");
-import {parentPort, workerData, Worker} from "worker_threads";
+import {parentPort, workerData} from "worker_threads";
 
 interface Message {
     content: string,
