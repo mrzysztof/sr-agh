@@ -1,8 +1,8 @@
 *.class
-.idea
-.bsp
-.metals
-.vscode
+.idea/
+.bsp/
+.metals/
+.vscode/
 target/
 node_modules
 *.js
