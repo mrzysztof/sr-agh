@@ -24,7 +24,6 @@ object Supplier extends App{
           println(s"[Received]: Order for $orderedItem from $crew.")
           val confirmationMsg = s"Your order for $orderedItem is realized by $name."
           channel.basicPublish(defaultExchange, "crews." + crew, null, toBytes(confirmationMsg))
-          channel.basicPublish(defaultExchange, "admin", null, toBytes(confirmationMsg))
           println(s"[Sent]: Order confirmation for $orderedItem to $crew.")
         }
         case _ => println("[Error]: Could not parse received message.")
@@ -34,10 +33,11 @@ object Supplier extends App{
   }
 
   def setupSupplier(): Try[Unit] = Try {
-    channel.exchangeDeclare(defaultExchange, "direct", true)
+    channel.exchangeDeclare(defaultExchange, "topic", true)
     offer.foreach(item => {
-      initSharedQueue(channel, item, List(item))
-      channel.basicConsume(item, true, orderConsumer)
+      val queueName = "items." + item
+      initSharedQueue(channel, queueName, List(queueName))
+      channel.basicConsume(queueName, true, orderConsumer)
     })
 
     val privQueueName = "suppliers." + name

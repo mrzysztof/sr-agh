@@ -15,7 +15,7 @@ object Crew extends App {
 
   def setupCrew(): Try[Unit]  = Try {
     val queueName = "crews." + name
-    channel.exchangeDeclare(defaultExchange, "direct", true)
+    channel.exchangeDeclare(defaultExchange, "topic", true)
     initPrivQueue(channel, queueName, List(queueName, "crews", "everyone"))
     channel.basicConsume(queueName, true, printerConsumer(channel))
   }
@@ -24,8 +24,7 @@ object Crew extends App {
   def work(): Unit = {
     val order = readLine("Enter your order:\n")
     val message = name + "-" + order
-    channel.basicPublish(defaultExchange, order, null, toBytes(message))
-    channel.basicPublish(defaultExchange, "admin", null, toBytes(message))
+    channel.basicPublish(defaultExchange, "items." + order, null, toBytes(message))
     println("[Sent]: " + "Completed order for " + order)
     work()
   }

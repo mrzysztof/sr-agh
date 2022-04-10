@@ -27,6 +27,5 @@ package object rabbitmq {
   val initSharedQueue: (Channel, String, List[String]) => Unit =
     initQueue(false, false)
 
-
-  val defaultExchange: String = "direct-exchange"
+  val defaultExchange: String = "topic-exchange"
 }

@@ -13,8 +13,8 @@ object Admin extends App{
   val channel = connection.createChannel()
 
   def setupAdmin(): Try[Unit]  = Try {
-    channel.exchangeDeclare(defaultExchange, "direct", true)
-    initPrivQueue(channel, name, List("admin"))
+    channel.exchangeDeclare(defaultExchange, "topic", true)
+    initPrivQueue(channel, name, List("crews.*", "items.*"))
     channel.basicConsume(name, true, printerConsumer(channel))
   }
 
