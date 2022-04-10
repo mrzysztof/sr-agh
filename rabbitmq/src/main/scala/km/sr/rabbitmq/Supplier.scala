@@ -41,7 +41,7 @@ object Supplier extends App{
     })
 
     val privQueueName = "suppliers." + name
-    initPrivQueue(channel, privQueueName, List(privQueueName, "suppliers", "everyone"))
+    initPrivQueue(channel, privQueueName, List("suppliers", "everyone"))
     channel.basicConsume(privQueueName, true, printerConsumer(channel))
   }
 
